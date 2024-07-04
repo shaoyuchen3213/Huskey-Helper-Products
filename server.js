@@ -1,5 +1,6 @@
 const express = require('express');
 require('dotenv/config');
+require('newrelic')
 const Userouter = require("./router/productsRoutes.js")
 
 const app = express()

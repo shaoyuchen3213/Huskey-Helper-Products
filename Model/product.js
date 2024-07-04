@@ -81,7 +81,6 @@ WHERE
 GROUP BY 
     p.id;`
         const result = await db.query(queryStr);
-        console.log(result.rows)
         return result.rows;
     } catch (err) {
         console.log(err);
